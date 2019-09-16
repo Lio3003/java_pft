@@ -3,18 +3,18 @@ package ru.stqa.pft.sandbox;
 public class MyFirstProgram {
 
   public static void main(String[] args) {
-hello();
-    int a = 5;
-    int b = 7;
-    System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + vov(a, b));
+    hello();
+    Rectangle r = new Rectangle(5, 7);
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.pr());
+    Square s = new Square(10);
+    System.out.println("Площадь квадрата со стороной " + s.x + " = " + s.kv());
+
   }
-public static String a = "world!";
+
+  public static String a = "world!";
 
   public static void hello() {
     System.out.println("Hello " + a);
   }
+  }
 
-  public static int vov(int a, int b){
-    return a * b;
-  }
-  }
